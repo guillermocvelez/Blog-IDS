@@ -1,0 +1,153 @@
+:root{
+    --primary-green: rgb(73,180,22);
+    --primary-orange:rgb(243,141,4);
+    --grey: #777777
+}
+
+body{
+    margin:0;
+    padding:0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+   /*  justify-content: center; */
+    /* flex-wrap: wrap; */
+}
+
+header{
+    height: 500px;
+}
+
+header nav{
+    
+    height: 100px;
+    background-color: white;
+    box-shadow: none;
+}
+
+.page-button{
+    background-color: var(--primary-green);
+}
+.page-button:hover{
+    background-color: var(--primary-orange)
+}
+
+#contacto{
+    color: var(--grey);
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+textarea:focus{
+    border-bottom:2px solid var(--primary-green) !important;
+    
+}
+
+.input-container input[type=text]:focus + label,
+.input-container input[type=email]:focus + label,
+.input-container input[type=password]:focus + label
+ {
+    color:var(--primary-orange)!important;
+  }
+
+
+nav .brand-logo{
+    height: 120px;
+    width: 120px;
+    
+}
+nav .brand-logo img{
+    width: 150px;
+    height: auto;
+}
+
+header nav ul{
+    height: 100px;    
+}
+header ul a{
+    color: grey;
+}
+.header-main-pic{
+    width: 100vw;
+    height: 400px;
+    background-image: url('../assets/Banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.page-ham-menu{
+    color:var(--primary-orange);
+    
+}
+
+.main-cards-page{
+    display: flex;
+    flex-wrap: wrap;
+    
+     
+}
+
+/* article{
+    flex: 30%;
+    max-width: 30%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+    
+}
+
+article .card{
+margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+} */
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+/* @media screen and (max-width: 800px) {
+    article {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  /* @media screen and (max-width: 600px) {
+    article {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+ 
+ */ 
+
+
+.input-field.input-container{
+
+    height: 100px;
+    float: none;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+.input-field > #search{
+    margin-left: 20px;
+}
+
+footer.page-footer{
+    height: 80px;
+    background-color:var(--primary-green);
+    bottom: 0;
+
+}
+
+.registro-titulo{
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+.registro-header{
+    height: 400px;
+}
